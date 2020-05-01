@@ -41,8 +41,8 @@ app.post("/", function (req, res) {
     }
 
     const request = https.request(url, options, function (response) {
-        
-        if(response.statusCode === 200) {
+
+        if (response.statusCode === 200) {
             res.sendFile(__dirname + "/success.html")
         } else {
             res.sendFile(__dirname + "/failure.html");
@@ -58,13 +58,15 @@ app.post("/", function (req, res) {
 })
 
 
-app.post("/failure", function(req,res) {
+app.post("/failure", function (req, res) {
     res.redirect("/")
 })
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("localhost connected port 3000");
 })
+
+
 
 //apikey for mailchimp 98e67653a037e217c3442dfcdb6634b7-us8
 
