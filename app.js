@@ -37,7 +37,7 @@ app.post("/", function (req, res) {
 
     const options = {
         method: "POST",
-        auth: "helloworld:98e67653a037e217c3442dfcdb6634b7-us8"
+        auth: "helloworld:fe7c9f9f07f2f5a1b76e604499cf51ed-us8"
     }
 
     const request = https.request(url, options, function (response) {
@@ -68,6 +68,6 @@ app.listen(process.env.PORT || 3000, () => {
 
 
 
-//apikey for mailchimp 98e67653a037e217c3442dfcdb6634b7-us8
+//apikey for mailchimp fe7c9f9f07f2f5a1b76e604499cf51ed-us8
 
 //listid bb449cf895
